@@ -1,15 +1,30 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch, Route, Link, Redirect
+} from "react-router-dom";
+
+import PageA from './screens/pageA.js';
+import PageB from './screens/pageB.js';
 
 
 function App() {
 
   return (
-    <div className='container mx-auto'>
-      <h1>Hello crypto</h1>
-      <button className='text-white text-3xl font-semibold p-3 rounded-lg shadow-lg bg-green-400 hover:bg-green-600'>
-        click me
-      </button>
-    </div>
+    <Router>
+      <div className='divide-y divide-yellow-500'>
+        <div className='h-16 w-full flex justify-center space-x-16'>
+          <Link to='/pageA' className="text-black text-3xl font-semibold hover:text-gray-500">Page A</Link>
+          <Link to='/pageB' className="text-black text-3xl font-semibold hover:text-gray-500">Page B</Link>
+        </div>
+
+        <Switch>
+          <Route exact path='/pageA' component={PageA} />
+          <Route exact path='/pageB' component={PageB} />
+          <Redirect to='/pageA' />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
