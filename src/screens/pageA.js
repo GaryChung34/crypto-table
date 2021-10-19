@@ -1,28 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const baseURL = 'https://ftx.com/api/markets';
-const instance = axios.create({
-  baseURL: 'https://ftx.com/api/markets',
-  timeout: 5000,
-  withCredentials: false,
-  crossorigin: true,
-  headers: {
-    crossorigin: true,
-    crossDomain: true,
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS'
-  }
-})
 
 function PageA() {
   const [ test, setTest ] = useState(null)
 
   useEffect(() => {
-    instance.get().then((response) => {
+    axios.get('/api/markets').then((response) => {
       setTest(response.data)
+      console.log(test)
     })
-    console.log(test)
   }, [])
 
 
