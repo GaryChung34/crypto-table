@@ -12,8 +12,8 @@ function App() {
 
   return (
     <Router>
-      <div className='divide-y divide-yellow-500'>
-        <div className='h-16 w-full flex justify-center space-x-16'>
+      
+        <div className='h-16 w-full flex justify-center space-x-16 border-b-2 border-yellow-500'>
           <Link to='/pageA' className="text-black text-3xl font-semibold hover:text-gray-500">Page A</Link>
           <Link to='/pageB' className="text-black text-3xl font-semibold hover:text-gray-500">Page B</Link>
         </div>
@@ -23,7 +23,7 @@ function App() {
           <Route exact path='/pageB' component={PageB} />
           <Redirect to='/pageA' />
         </Switch>
-      </div>
+      
     </Router>
   );
 }
