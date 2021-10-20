@@ -1,6 +1,6 @@
 # The Crpyto Table 
 
-This is a crpyto table by automatic sorting and refresh.
+A crpyto table with automatic sorting and refresh on spot and future market.
 
 ## How to open:
 ```
@@ -9,7 +9,12 @@ npm install
 npm start
 ```
 
-## Introduction:
+## Tech Stack
+* ReactJS
+* TailwindCSS
+* Fontawesome
+* Axios
+* React-Router-Dom
 
-
-## Tech Stack:
+## Preview:
+![crypto_table](https://user-images.githubusercontent.com/87843133/138166164-7f5d7b89-b837-4e17-920a-68e6bc93a719.png)
