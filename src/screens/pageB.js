@@ -25,10 +25,11 @@ function PageB() {
   }
 
   useEffect(() => {
-    fetchData()
+    const firstFetch = setTimeout(fetchData, 0)
     const updateLoop = setInterval(fetchData, 10000)
 
     return () => {
+      clearTimeout(firstFetch)
       clearInterval(updateLoop)
     }
   }, [])
