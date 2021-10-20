@@ -44,9 +44,9 @@ function PageA() {
 						<th className='price'>bid</th>
 						<th className='price'>Ask</th>
 						<th className='price'>Price</th>
-						<th className='price'>Assist</th>
-						<th className='rounded-tr-2xl pr-5'>
-							Volume
+						<th className='price'>Underlying Assist</th>
+						<th className='w-1/4 rounded-tr-2xl pr-5'>
+							Volume in USD for last 24 hours
 						</th>
 					</tr>
 				</thead>

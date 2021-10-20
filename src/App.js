@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       
-        <div className='bg-lakeBlue h-16 w-full flex justify-center items-center space-x-16 shadow-md'>
+        <div className='bg-lakeBlue h-16 w-screen flex justify-center items-center space-x-16 shadow-md'>
           <Link to='/pageA' className="text-white text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
             hover:bg-blue-50 active:border-2 active:border-blue-500 active:border-solid
             focus:bg-blue-50 focus:text-blue-500">
