@@ -13,13 +13,13 @@ function App() {
   return (
     <Router>
       
-        <div className='h-16 w-full flex justify-center items-center space-x-16 border-b border-blue-500 shadow-md'>
-          <Link to='/pageA' className="text-gray-500 text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
+        <div className='bg-lakeBlue h-16 w-full flex justify-center items-center space-x-16 shadow-md'>
+          <Link to='/pageA' className="text-white text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
             hover:bg-blue-50 active:border-2 active:border-blue-500 active:border-solid
             focus:bg-blue-50 focus:text-blue-500">
               Spot
           </Link>
-          <Link to='/pageB' className="text-gray-500 text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
+          <Link to='/pageB' className="text-white text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
             hover:bg-blue-50 active:border-2 active:border-blue-500 active:border-solid
             focus:bg-blue-50 focus:text-blue-500">
               future

@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-4xl py-3 font-semibold;
+    @apply text-4xl py-3 font-semibold font-sans;
   }
   h2 {
     @apply text-3xl py-2 font-semibold;
@@ -21,7 +21,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-blue-50;
+  @apply bg-bgGray;
 }
 
 code {
@@ -41,16 +41,18 @@ table {
 }
 
 th, td {
-  @apply text-lg;
+  @apply 
+    text-lg
+    font-sans;
 }
 
 th {
   @apply 
-    bg-gray-50
-    text-gray-800
+    bg-lakeBlue
+    text-white
     text-lg
     text-right
-    font-medium
+    font-bold
     p-2;
 }
 
@@ -58,7 +60,8 @@ td {
   @apply 
     p-3 py-5 
     text-gray-600
-    text-right 
+    text-right
+    font-semibold 
     bg-white 
     border-t 
     border-solid 

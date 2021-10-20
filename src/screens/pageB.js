@@ -35,17 +35,17 @@ function PageB() {
 
 	return(
 		<div className='container mx-auto'>
-      <h1 className='p-8 mx-auto text-center'>Page B - Future Market</h1>
+      <h1 className='pt-16 pb-4 pl-4 mx-auto'>Future Market</h1>
 
-      <table className='w-4/5 mx-auto'>
+      <table className='w-full mx-auto'>
         <thead>
           <tr>
-            <th className='bg-red-600 rounded-tl-2xl'>Asset/Contract Name</th>
-            <th className='bg-red-600 price'>bid</th>
-            <th className='bg-red-600 price'>Ask</th>
-            <th className='bg-red-600 price'>Price</th>
-            <th className='bg-red-600 price'>Underlying Assist</th>
-            <th className='bg-red-600 price rounded-tr-2xl'>Volume in USD (last 24 hr)</th>
+            <th className='rounded-tl-2xl text-left pl-5'>Asset/Contract Name</th>
+            <th className='price'>bid</th>
+            <th className='price'>Ask</th>
+            <th className='price'>Price</th>
+            <th className='price'>Assist</th>
+            <th className='rounded-tr-2xl pr-5'>Volume</th>
           </tr>
         </thead>
 

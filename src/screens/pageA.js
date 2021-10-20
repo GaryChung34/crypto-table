@@ -23,10 +23,11 @@ function PageA() {
 	}
 
 	useEffect(() => {
-    fetchData()
+    const firstFetch = setTimeout(fetchData, 0)
     const updateLoop = setInterval(fetchData, 10000)
 
     return () => {
+    	clearTimeout(firstFetch)
     	clearInterval(updateLoop)
     }
 	}, [])
@@ -34,19 +35,18 @@ function PageA() {
 
 	return(
 		<div className='container mx-auto'>
-			<h1 className='p-8 mx-auto text-center'>Page A - Spot Market</h1>
+			<h1 className='pt-16 pb-4 pl-4 mx-auto text-gray-700'>Spot Market</h1>
 
-			<table className='w-4/5 mx-auto'>
+			<table className='w-full mx-auto'>
 				<thead>
 					<tr>
 						<th className='rounded-tl-2xl text-left pl-5'>Asset/Contract Name</th>
 						<th className='price'>bid</th>
 						<th className='price'>Ask</th>
 						<th className='price'>Price</th>
-						<th className='bprice'>Underlying Assist</th>
-						<th className='price whitespace-pre-line rounded-tr-2xl pr-5'>
-							Volume in USD
-							(last 24hr)
+						<th className='price'>Assist</th>
+						<th className='rounded-tr-2xl pr-5'>
+							Volume
 						</th>
 					</tr>
 				</thead>
