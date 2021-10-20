@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import TableRender from '../components/eachData.js'
+import TableRender from '../components/eachData.js';
 
 
 function PageB() {
@@ -65,8 +65,8 @@ function PageB() {
     console.log(test.result)
     const future = test.result.filter(trade => trade.type === 'future')
     console.log(future)
-    const result = test.result.filter(trade => {
-      if(trade.underlying === 'BTC' || trade.underlying === 'ETH')
+    const result = future.filter(trade => {
+      if((trade.underlying === 'BTC' || trade.underlying === 'ETH') && trade.name.search('PERP') !== -1)
         return true
     })
     console.log(result)
@@ -93,7 +93,7 @@ function PageB() {
           </tr>
         </thead>
         <tbody>
-          <TableRender result={result}/>
+          <TableRender result={result} />
         </tbody>
       </table>
   	</div>
