@@ -11,7 +11,7 @@ function PageA() {
 			console.log(test)
 		})
 	}, [])
-
+	
 
 	return(
 		<div className='container mx-auto'>
