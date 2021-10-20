@@ -13,9 +13,17 @@ function App() {
   return (
     <Router>
       
-        <div className='h-16 w-full flex justify-center space-x-16 border-b border-yellow-500 shadow-lg'>
-          <Link to='/pageA' className="text-black text-3xl font-semibold hover:text-gray-500">Page A</Link>
-          <Link to='/pageB' className="text-black text-3xl font-semibold hover:text-gray-500">Page B</Link>
+        <div className='h-16 w-full flex justify-center items-center space-x-16 border-b border-blue-500 shadow-md'>
+          <Link to='/pageA' className="text-gray-500 text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
+            hover:bg-blue-50 active:border-2 active:border-blue-500 active:border-solid
+            focus:bg-blue-50 focus:text-blue-500">
+              Spot
+          </Link>
+          <Link to='/pageB' className="text-gray-500 text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
+            hover:bg-blue-50 active:border-2 active:border-blue-500 active:border-solid
+            focus:bg-blue-50 focus:text-blue-500">
+              future
+          </Link>
         </div>
 
         <Switch>

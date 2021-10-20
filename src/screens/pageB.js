@@ -12,8 +12,6 @@ function PageB() {
 
     axios.get('/api/markets')
       .then((response) => {
-        console.log(response.data)
-
         future = response.data.result.filter(trade => trade.type === 'future')
         temp = future.filter(trade => {
           if((trade.underlying === 'BTC' || trade.underlying === 'ETH') && trade.name.search('PERP') !== -1)
@@ -42,12 +40,12 @@ function PageB() {
       <table className='w-4/5 mx-auto'>
         <thead>
           <tr>
-            <th className='bg-red-600'>Asset/Contract Name</th>
+            <th className='bg-red-600 rounded-tl-2xl'>Asset/Contract Name</th>
             <th className='bg-red-600 price'>bid</th>
             <th className='bg-red-600 price'>Ask</th>
             <th className='bg-red-600 price'>Price</th>
             <th className='bg-red-600 price'>Underlying Assist</th>
-            <th className='bg-red-600 price'>Volume in USD (last 24 hr)</th>
+            <th className='bg-red-600 price rounded-tr-2xl'>Volume in USD (last 24 hr)</th>
           </tr>
         </thead>
 
