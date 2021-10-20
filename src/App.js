@@ -14,14 +14,16 @@ function App() {
     <Router>
       
         <div className='bg-lakeBlue h-16 w-screen flex justify-center items-center space-x-16 shadow-md'>
+          
           <Link to='/pageA' className="text-white text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
-            hover:bg-blue-50 active:border-2 active:border-blue-500 active:border-solid
-            focus:bg-blue-50 focus:text-blue-500">
+            hover:border-b-2 hover:border-white hover:border-solid
+            focus:bg-white focus:text-gray-700">
               Spot
           </Link>
+
           <Link to='/pageB' className="text-white text-2xl font-semibold px-6 py-1 pb-2 rounded-xl 
-            hover:bg-blue-50 active:border-2 active:border-blue-500 active:border-solid
-            focus:bg-blue-50 focus:text-blue-500">
+            hover:border-b-2 hover:border-white hover:border-solid
+            focus:bg-white focus:text-gray-700">
               future
           </Link>
         </div>

@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply text-4xl py-3 font-semibold font-sans;
-  }
-  h2 {
-    @apply text-3xl py-2 font-semibold;
-  }
-  h3 {
-    @apply text-2xl py-1 font-semibold;
-  }
+
+h1 {
+  @apply text-4xl py-3 font-semibold font-sans;
 }
 
 body {
@@ -69,14 +62,9 @@ td {
     border-gray-300;
 }
 
-tr:nth-child(even) {
-  /*@apply bg-gray-200;*/
+tr:hover td{
+  @apply bg-gray-100;
 }
-
-tr:hover {
-  @apply bg-yellow-100;
-}
-
 
 
 .price {

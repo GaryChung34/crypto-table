@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import TableRender from '../components/eachData.js';
+import Table from '../components/table.js';
 
 
 function PageB() {
@@ -35,24 +35,8 @@ function PageB() {
 
 	return(
 		<div className='container mx-auto'>
-      <h1 className='pt-16 pb-4 pl-4 mx-auto'>Future Market</h1>
-
-      <table className='w-full mx-auto'>
-        <thead>
-          <tr>
-            <th className='rounded-tl-2xl text-left pl-5'>Asset/Contract Name</th>
-            <th className='price'>bid</th>
-            <th className='price'>Ask</th>
-            <th className='price'>Price</th>
-            <th className='price'>Assist</th>
-            <th className='rounded-tr-2xl pr-5'>Volume</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <TableRender result={result} />
-        </tbody>
-      </table>
+      <h1 className='text-gray-700 pt-16 pb-4 pl-4 mx-auto'>Future Market</h1>
+      <Table result={result} />
   	</div>
 	)
 }
