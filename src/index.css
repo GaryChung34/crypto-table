@@ -21,9 +21,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-50;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid dimgray;
+  @apply text-lg;
+}
+
+th {
+  @apply 
+    text-white
+    text-lg
+    font-medium
+    p-2;
+}
+
+td {
+  text-align: right;
+  @apply p-3 py-5;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-200;
+}
+
+tr:hover {
+  @apply bg-yellow-100;
+}
+
+
+
+.price {
+  width: 12%;
 }
